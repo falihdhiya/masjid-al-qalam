@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table</title>
+    <style>
+      table,
+      tr,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      table {
+        width: 300px;
+        height: 200px;
+      }
+
+      th {
+        text-align: left;
+      }
+      td {
+        text-align: center;
+      }
+      tr:hover {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>belajar table</h1>
+    <table>
+      <colgroup>
+        <col span="2" style="background-color: yellow" />
+        <col style="background-color: aqua" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th colspan="2">Nama</th>
+          <th>nilai</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>muhammad</td>
+          <td>ali</td>
+          <td>80</td>
+        </tr>
+        <tr>
+          <td>budi</td>
+          <td>nugraha</td>
+          <td>90</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td rowspan="2">TOTAL</td>
+          <td>total</td>
+          <td>170</td>
+        </tr>
+        <tr>
+          <td>rata-rata</td>
+          <td>85</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
